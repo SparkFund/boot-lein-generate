@@ -1,10 +1,10 @@
-# Change Log
-All notable changes to this project will be documented in this file.
+# Changelog
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) 
-and this project adheres to [Semantic Versioning](http://semver.org/).
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+<!--
+0.0.0 (YYYY-MM-DD)
+------------------
 
 ### Added
 - ...
@@ -14,16 +14,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - ...
+-->
 
-## [0.1.3] - 2016-10-11
+
+0.1.3 (2016-10-11)
+------------------
 
 ### Added
-
 - Emit `(get-env :repositories)`
 
 
-## [0.1.2] - 2016-10-11
+0.1.2 (2016-10-11)
+------------------
 
 ### Changed
-
 - Clojure 1.9.0-alpha13 compatibility
