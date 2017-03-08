@@ -1,5 +1,5 @@
 ; To inform IntelliJ explicitely about deftask, set-env!, task-options!
-(def +version+ "0.1.4")
+(def +version+ "0.2.0")
 
 (require '[boot.core :refer :all])
 (task-options!
