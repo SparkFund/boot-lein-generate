@@ -30,4 +30,4 @@ Copyright 2016-2017
 [Tamas Herman](https://github.com/onetom/boot-lein-generate),
 and [SparkFund](https://github.com/SparkFund/boot-lein-generate)
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the [Eclipse Public License, Version 1.0](LICENSE.md), the same as Clojure.
