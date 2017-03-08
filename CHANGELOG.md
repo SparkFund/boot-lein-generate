@@ -20,6 +20,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 -->
 
 
+0.3.0 (2017-03-08)
+------------------
+
+### Breaking Changes
+- `:url`, `:description`, and `:license` are no longer copied from Boot environment values of the same name
+- `:url`, `:description`, and `:scm` are now inferred from `pom` task-options by default
+
+### Added
+- It's now possible to add/modify the values put into the `project.clj`.  See [README.md](README.md#usage) for details.
+
+
 0.2.0 (2017-03-08)
 ------------------
 
