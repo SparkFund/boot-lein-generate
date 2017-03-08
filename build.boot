@@ -8,7 +8,7 @@
        :description "Boot task to generate a project.clj from your Boot project, for slightly better interop with Cursive IDE"
        :url         "https://github.com/SparkFund/boot-lein-generate"
        :scm         {:url "https://github.com/SparkFund/boot-lein-generate"}
-       :license     {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
+       :license     {"Eclipse Public License" "https://www.eclipse.org/legal/epl-v10.html"}})
 
 (set-env!
   :source-paths #{"src"}
