@@ -4,7 +4,7 @@
             [boot.core :as core]
             [boot.util :as util]))
 
-(defn- generate-lein-project-file! [& {:keys [keep-project] :or {keep-project true}}]
+(defn- write-project-clj! [& {:keys [keep-project] :or {keep-project true}}]
   (let [pfile (io/file "project.clj")
         ; Only works when pom options are set using task-options!
         {:keys [project version]} (:task-options (meta #'boot.task.built-in/pom))
@@ -22,7 +22,7 @@
     (if-not keep-project (.deleteOnExit pfile))
     (spit pfile proj)))
 
-(core/deftask generate
+(core/deftask write-project-clj
   "Generate a leiningen `project.clj` file.
    This task generates a leiningen `project.clj` file based on the boot
    environment configuration, including project name and version (generated
@@ -30,4 +30,4 @@
    to the generated `project.clj` file by specifying a `:lein` key in the boot
    environment whose value is a map of keys-value pairs to add to `project.clj`."
   []
-  (generate-lein-project-file! :keep-project true))
+  (write-project-clj! :keep-project true))
