@@ -1,6 +1,14 @@
 ; To inform IntelliJ explicitely about deftask, set-env!, task-options!
-(require '[boot.core :refer :all]
-         '[boot.task.built-in :refer :all])
+(def +version+ "0.1.4")
+
+(require '[boot.core :refer :all])
+(task-options!
+  pom {:project     'sparkfund/boot-lein-generate
+       :version     +version+
+       :description "Boot task to generate a project.clj from your Boot project, for slightly better interop with Cursive IDE"
+       :url         "https://github.com/SparkFund/boot-lein-generate"
+       :scm         {:url "https://github.com/SparkFund/boot-lein-generate"}
+       :license     {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
 
 (set-env!
   :source-paths #{"src"}
@@ -11,17 +19,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[boot.lein :refer :all])
 
-(def +version+ "0.1.4")
 
 (bootlaces! +version+)
-
-(task-options!
-  pom {:project     'sparkfund/boot-lein-generate
-       :version     +version+
-       :description "Boot task to generate a project.clj from your Boot project, for slightly better interop with Cursive IDE"
-       :url         "https://github.com/SparkFund/boot-lein-generate"
-       :scm         {:url "https://github.com/SparkFund/boot-lein-generate"}
-       :license     {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
 
 
 (deftask deps
