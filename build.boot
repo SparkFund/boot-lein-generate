@@ -16,9 +16,9 @@
 (bootlaces! +version+)
 
 (task-options!
-  pom {:project     'onetom/boot-lein-generate
+  pom {:project     'sparkfund/boot-lein-generate
        :version     +version+
-       :description "Boot task to generate project.clj file"
-       :url         "https://github.com/onetom/boot-lein-generate"
-       :scm         {:url "https://github.com/onetom/boot-lein-generate"}
+       :description "Boot task to generate a project.clj from your Boot project, for slightly better interop with Cursive IDE"
+       :url         "https://github.com/SparkFund/boot-lein-generate"
+       :scm         {:url "https://github.com/SparkFund/boot-lein-generate"}
        :license     {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
