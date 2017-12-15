@@ -1,4 +1,4 @@
-(ns boot.lein
+(ns sparkfund.boot-lein
   {:boot/export-tasks true}
   (:require [clojure.java.io :as io]
             [boot.core :as boot]
@@ -42,7 +42,7 @@
   [info-overrides]
   (let [pfile (io/file "project.clj")
         info-base (base-project-info)
-        info-env (boot/get-env :boot.lein/project-clj)
+        info-env (boot/get-env :sparkfund.boot-lein/project-clj)
         info (merge info-base info-env info-overrides)
         project (pom-task-option :project 'boot-project)
         version (pom-task-option :version "0.0.0-SNAPSHOT")
@@ -56,7 +56,7 @@
   task-options that have been set for the `pom` built-in task.
 
   You can override / add more values to your `project.clj` in one of two ways.  You can either pass a map as an
-  option (`override`) to this task, or you can set a Boot environment property:  (set-env! :boot.lein/project-clj {:key :val})
+  option (`override`) to this task, or you can set a Boot environment property:  (set-env! :sparkfund.boot-lein/project-clj {:key :val})
   The override map passed directly to this task takes precedence over the values from the Boot environment property.
 
   Note that these maps are combined with (merge), so you will override values, not extend them."

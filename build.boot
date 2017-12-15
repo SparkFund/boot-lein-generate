@@ -3,7 +3,7 @@
 
 (require '[boot.core :refer :all])
 (task-options!
-  pom {:project     'sparkfund/boot-lein-generate
+  pom {:project     'sparkfund/boot-lein
        :version     +version+
        :description "Boot task to generate a project.clj from your Boot project, for slightly better interop with Cursive IDE"
        :url         "https://github.com/SparkFund/boot-lein-generate"
@@ -12,12 +12,12 @@
 
 (set-env!
   :source-paths #{"src"}
-  :dependencies '[[org.clojure/clojure "1.9.0-alpha14" :scope "provided"]
-                  [boot/core "2.7.1" :scope "provided"]
+  :dependencies '[[org.clojure/clojure "1.9.0" :scope "provided"]
+                  [boot/core "2.7.2" :scope "provided"]
                   [adzerk/bootlaces "0.1.13" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
-         '[boot.lein :refer :all])
+         '[sparkfund.boot-lein :refer :all])
 
 
 (bootlaces! +version+)
