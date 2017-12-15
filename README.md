@@ -1,6 +1,6 @@
 # boot-lein
 
-[![Clojars Project](https://img.shields.io/clojars/v/sparkfund/boot-lein-generate.svg)](https://clojars.org/sparkfund/boot-lein-generate)
+[![Clojars Project](https://img.shields.io/clojars/v/sparkfund/boot-lein.svg)](https://clojars.org/sparkfund/boot-lein)
 
 [Boot](https://github.com/boot-clj/boot) task for generating a `project.clj` from your Boot project.
 This will allow [Cursive IDE](https://cursive-ide.com/) to work with your Boot project.

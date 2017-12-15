@@ -19,6 +19,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - ...
 -->
 
+0.4.0 (2017-12-15)
+------------------
+
+### Breaking Changes
+- Namespace changed from `boot.lein` to `sparkfund.boot-lein`
+- Boot env setting `:boot.lein/project-clj` renamed to `:sparkfund.boot-lein/project-clj` (to match the namespace change)
+- Maven coordinates changed from `sparkfund/boot-lein-generate` to `sparkfund/boot-lein` (to match the namespace change)
+
 
 0.3.0 (2017-03-08)
 ------------------
