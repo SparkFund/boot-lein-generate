@@ -7,7 +7,7 @@ This will allow [Cursive IDE](https://cursive-ide.com/) to work with your Boot p
 
 ```clojure
 ;in your build.boot
-(set-env! :dependencies '[[sparkfund/boot-lein "0.3.0"]])
+(set-env! :dependencies '[[sparkfund/boot-lein "0.4.0"]])
 (require '[sparkfund.boot-lein :refer :all])
 
 ;now you can run `boot write-project-clj`
