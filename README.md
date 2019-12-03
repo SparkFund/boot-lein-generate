@@ -40,7 +40,7 @@ named `:sparkfund.boot-lein/project-clj`, or pass the map as the `override` opti
 ;or invoke the task directly from some other task
 (deftask whatever
   [] ;...
-  (write-project-clj {:override {:url "https://github.com/SparkFund/boot-lein-generate"}}))
+  (write-project-clj :override {:url "https://github.com/SparkFund/boot-lein-generate"}))
 ```
 
 You can also specify these overrides from the command line, although you have to be a little
